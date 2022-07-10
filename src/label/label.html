@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instalação</title>
+    <title>Componente Label</title>
 </head>
-
 <body style="background-color: #e8f1f2; color: #202222; font-family: Helvetica, Arial, sans-serif">
     <header style="background-color:#2098df; border: #13293d;
                     color: #fff; margin: -10px; 
@@ -20,18 +18,18 @@
 
     <div style="width: 70%; margin-left: 15%;">
             <br>
-            <h3>Instalação e configuração do ambiente de desenvolvimento</h3>
+            <h3>Componente Label com JAVA FX</h3>
             
-            <p>Vamos direto ao assunto, para voçê iniciar o proceso no MAC OS, voçê precisa que esteja instalado na sua máquina:
-                <br> - <a href="https://www.java.com/pt-BR/download/" target="_blank" rel="noopener noreferrer">JAVA</a>.
-                <br> - <a href="https://www.eclipse.org/downloads/" target="_blank" rel="noopener noreferrer">Eclipse</a>.
-                <br> - <a href="https://gluonhq.com/products/javafx/" target="_blank" rel="noopener noreferrer">JavaFX</a>.
-                <br> - <a href="https://gluonhq.com/products/scene-builder/" target="_blank" rel="noopener noreferrer">SceneBuilder</a>.
-                <br><br> Após o download, processo de <b>instalação</b> é bem semelhante aos demais: Extraia os arquivos > Inicie a instalação > Clique em Next até
-                concluir o processo.
+            <p>Label pode ser traduzido para o português como "Rótulo" ou mesmo "Legenda". Para criar um label utilizando JAVA FX, basta importar e instanciar o objeto Label. <br> Veja o exemplo: 
+                <br><code>Label label = new Label("My Label");</code>
+                <br>Note que a string passada como parâmetro para o construtor, é a que será o rotulo do label.
+            
             </p><hr>
-            <!-- JAVA -->
-            <p><strong>JAVA</strong><br>A o arquivo de instalação do jre JAVA. Clique em "Abrir".</p>
+
+            <!-- Inicio -->
+            <p><br>Para tornar o Label visível, você deve adicioná-lo ao gráfico de cena. 
+                Isso significa adicioná-lo a um objeto Scene ou como filho de um layout anexado a um objeto Scene.
+                Aqui está um exemplo que anexa um label JavaFX ao gráfico de cena:</p>
             <br><img src="./01-java.png" style="width: 100%; margin-left: 0%;"><br><br>
 
             <p>Na tela de bem-vindo, clique em "Instalar". E digite a senha solicitada.</p>
@@ -71,14 +69,7 @@
             <p>Clique em "Aplicar e fechar".</p>
             <br><img src="./04-javafx.png" style="width: 100%; margin-left: 0%;"><br><br><hr>
 
-            <!-- Scene Builder -->
-            <p><strong>Scene Builder</strong><br>Abra o arquivo baixado e instale. Aceite os termos de uso e em seguida clique em next até o final do download.</p>
-            <br><img src="./03-javafx.png" style="width: 100%; margin-left: 0%;"><br><br>
-
-            <p>Clique em "Adicionar JARs externos" na barra lateral direita.<br>Selecione de dentro dos arquivos de você baixou no site da JavaFX. <br>Dentro da pasta Lib, todos dos arquivos com extenção ".jar"</p><hr>
-
             <p>Agora temos nosso ambiente com as ferramentas descessárias para ultilizar o JAVAFX.</p>
-            <p>A partir de agora para criar quanquer componente com JAVAFX você precisará importar a biblioteca para dentro da classe.</p>
         </p>
         <hr>
     </div>
@@ -97,5 +88,4 @@
                 <br>Discente do curso de Ciência da Computação na Universidade Federal do Ceará, campus Crateús.</i></p>
     </footer>
 </body>
-
 </html>
